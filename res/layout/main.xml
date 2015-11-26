@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:id="@+id/Connected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="is Connected"
+            android:textColor="#FFFFFF"
+            />
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/name"
+                  android:layout_width="50dp"
+                  android:layout_height="wrap_content"
+                  android:text="Name"
+                  android:layout_alignBaseline="@+id/etName"
+                />
+
+        <EditText android:id="@+id/etName"
+                  android:layout_width="150dp"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/name"/>
+
+        <TextView android:id="@+id/Country"
+                android:layout_width="50dp"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/name"
+                  android:text="Country"
+                  android:layout_alignBaseline="@+id/etCountry"
+               />
+        <EditText android:id="@+id/etCountry"
+                  android:layout_width="150dp"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@+id/Country"
+                  android:layout_below="@+id/etName"
+                  />
+    </RelativeLayout>
+    <Button android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "POST"
+            android:textColor="#FFFFFF"/>
+
+
+
+</LinearLayout>
+
